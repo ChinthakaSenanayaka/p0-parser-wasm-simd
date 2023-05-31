@@ -1,0 +1,9 @@
+Chintaka: Extending P0 with Partial Functions
+
+P0 has only total functions of where the domain is a subrange of integers, e.g. type T = [0 .. N – 1] → integer; these are implemented as arrays. The task is to implement partial functions, e.g. type T =  [0 .. N – 1] ↛ integer (using B notation) implemented by hash maps:
+
+    an appropriate kind of hash map should be selected and justified.
+    The language should be extended with indexing and assignment to partial functions, e.g. x[i] := y[i] if x, y: T. That is only well-defined y[i] is defined and 0 ≤ i < N. That should be checked and an exception raised.
+    The language should be extended with a for-loop, e.g. “for a in x do S” that iterates over all elements in the range.
+    The implementation should make use of SIMD instructions OR the implementation should allow partial functions to grow and shrink and allocate memory correspondingly without memory fragmentation; bonus if you do both
+    Comparison with languages with hash maps should be carried out, e.g. Go. For this, the best is to use some standard benchmark.
