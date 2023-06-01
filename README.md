@@ -10,6 +10,8 @@ Checkout this project to Jupiter Hub then run in this sequence.
 
 PartialFunction.ipynb has the main P0 code to run. CGWat.ipynb has WASM code generation and P0.ipynb has P0 language grammar and implementation.
 
+project question.txt file has the question.
+
 ## TODO
 Due to time limitation and scope of the change the following are set to TODO.
 - For each loop is not working since allocVar function to generate local variables creates local variables in the beginning
